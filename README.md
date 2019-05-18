@@ -107,3 +107,23 @@ Copyright © 2018 University of Nebraska at Omaha, University of Missouri and CH
 Augur is free software: you can redistribute it and/or modify it under the terms of the MIT License as published by the Open Source Initiative. See the file [LICENSE](LICENSE) for more details.
 
 (This work has been funded through the Alfred P. Sloan Foundation)
+
+## Summarize
+Augur is a convinient tool to check open source software development projects' health and sustainability. To make it more user-friendly, we decided to chage home page design to fit for multi-projects situation, and add search function and sort function additionally. After learning and testing, all three functions have been accomplished.
+
+Use case 1: Home Page redesign
+- This use case requires accessing the length of the array holding each github repository link. 
+- This use case also changes the style of the page to allow for overflow to display multiple projects.
+Result:This is done through a for loop that accesses each project in the repos array and getting the number of repositories in the project.There are hundreds of projects in page now.We can go through all of them by scrolling down the bar.
+
+Use case 2: Sorting the cards on the home page
+- This use case requires accessing the array of projects and directly manipulating the HTML DOM
+- Additionally, this use case requires sorting and a complete re-arrangement of the home page
+Result:Sorting function is finished.There are four kinds of sorting choices:A to Z, Z to A, Total Repos(greatest to least), Total Repos(greatest to least).
+
+Use case 3:Searching the cards on the home page
+- This use case requires accessing the array of projects and directly manipulating the HTML DOM
+- Additionally, this use case requires searching through all projects and return projects whose name contain key words.At last we need to re-arrange of the home page
+Result:Searching function is complete now.It will search through all projects in database for those who contain the key words. It only remains those results on page after searching. 
+
+Link to our EC2 instance: http://ec2-3-17-10-157.us-east-2.compute.amazonaws.com:3333/
